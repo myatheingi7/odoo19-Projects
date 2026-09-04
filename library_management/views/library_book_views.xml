@@ -10,6 +10,7 @@
                 <field name="author"/>
                 <field name="available_copies"/>
                 <field name="active" invisible="1"/>
+                <field name="book_code"/>
             </list>
         </field>
     </record>
@@ -26,14 +27,21 @@
                             <field name="isbn"/>
                             <field name="author"/>
                             <field name="published_date"/>
-                            <field name="price"/>
+                            <field name="book_price"/>
                             <field name="available_copies"/>
                             <field name="active"/>
+                            <field name="category_id"/>
+                            <field name="author_ids"/>
+                            <field name="book_code"/>
                         </group>
                         <group>
                             <field name="description" colspan="4"/>
                         </group>
                     </group>
+                     <button string="Generate Book Code"
+                            name="action_generate_book_code"
+                            type="object"
+                            class="btn-primary"/>
                 </sheet>
             </form>
         </field>

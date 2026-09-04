@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem id="menu_library_root"
+              name="Library"
+              sequence="10"/>
+    <menuitem id="menu_library_books"
+              name="Books"
+              parent="menu_library_root"
+              action="action_library_book"
+              sequence="10"/>
+    <menuitem id="menu_library_categories"
+              name="Categories"
+              parent="menu_library_root"
+              action="action_library_book_category"
+              sequence="20"/>
+    <menuitem id="menu_library_book_category"
+              name="Authors"
+              parent="menu_library_root"
+              action="action_library_author"
+              sequence="30"/>
+    <menuitem id="menu_library_borrows"
+              name="Borrow Records"
+              parent="menu_library_root"
+              action="action_library_borrow"
+              sequence="40"/>
+    <menuitem id="menu_library_book_report_wizard"
+              name="Book List Excel Report"
+              parent="menu_library_root"
+              action="action_library_book_report_wizard"
+              sequence="50"/>
+</odoo>
